@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Table Row Header Examples</title>
+</head>
+<body>
+<h1>Examples of row headers in tables</h1>
+
+<h2>A table with the row header not in the first column</h2>
+<h3>Using scope="col" and scope="row" to identify column and row headers</h3>
+<table>
+<caption>A table with the row header column in the second column rather than in the first column - using scope="row" to define the row headers</caption>
+<tr>
+<th scope="col">employee Number</th>
+<th scope="col">Employee Last Name</th>
+<th scope="col">Position</th>
+</tr>
+<tr>
+<td>1000</td>
+<th scope="row">King</th>
+<td>President</td>
+</tr>
+<tr>
+<td>2000</td>
+<th scope="row">Smith</th>
+<td>Vice-president</td>
+</tr>
+<tr>
+
+<td>3000</td>
+<th scope="row">Clark</th>
+<td>Sales Manager</td>
+</tr>
+<tr>
+<td>3100</td>
+<th scope="row">Blake</th>
+<td>Sales person</td>
+</tr>
+</table>
+
+<h3>Now using ARIA markup for the row and column headers</h3>
+
+<table>
+<caption>A table with the row header column in the second column rather than in the first column - using role="rowheader" to define the row headers</caption>
+<tr role="row">
+<th role="columnheader">employee Number</th>
+<th role="columnheader">Employee Last Name</th>
+<th role="columnheader">Position</th>
+</tr>
+<tr role="row">
+<td>1000</td>
+<th role="rowheader">King</th>
+<td>President</td>
+</tr>
+<tr role="row">
+<td>2000</td>
+<th role="rowheader">Smith</th>
+<td>Vice-president</td>
+</tr>
+<tr role="row">
+
+<td>3000</td>
+<th role="rowheader">Clark</th>
+<td>Sales Manager</td>
+</tr>
+<tr role="row">
+<td>3100</td>
+<th role="rowheader">Blake</th>
+<td>Sales person</td>
+</tr>
+</table>
+</body>
+</html>
